@@ -1,7 +1,7 @@
 [Click here to see the project](https://shopping-list-with-react.vercel.app/)
 <br>
 - __useState Hook__ <br>
-- __useEffect Hook__ br>
+- __useEffect Hook__ <br>
 - __useRef Hook__ <br>
 - __Props/State/Components__ <br>
 - __setTimeOut Function__<br>
