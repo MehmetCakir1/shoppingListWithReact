@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 50rem;
+  margin: 6rem auto;
+  box-shadow: 0px 5px 10px grey;
+  padding: 1rem;
+}
+form{
+  text-align: center;
+  width: 80%;
+  padding: 1rem;
+}
+form label{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color:rgb(43, 136, 243);
+  margin-bottom: 1rem;
+  display: inline-block ;
+}
+form input{
+  width: 70%;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+}
+form button[type=submit]{
+  padding: 0.3rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:white;
+  border-radius: 10px;
+  border-color: lightcoral;
+  margin-left: 1rem;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+form button[type=submit]:active{
+  transform: scale(0.98);
 }
 
-.App-link {
-  color: #61dafb;
+main{
+  min-height: 5rem;
+  width: 80%;
+  padding: 1rem 0.5rem;
+  background-color: rgb(207, 224, 231);
+  margin-top: 1rem;
+}
+.clrDiv{
+  text-align: center;
+}
+.clearBtn{
+  padding: 0.3rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:rgb(32, 30, 30);
+  border-radius: 10px;
+  border-color: lightskyblue;
+  background-color: lightskyblue;
+  cursor: pointer;
+  margin: 1rem 0rem 0.5rem;
+  text-align: center;
+}
+.clearBtn:active{
+  transform: scale(0.98);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  word-wrap: break-word;
+  margin-top: 0.5rem;
+  background-color: white;
+  
+}
+.content p{
+  max-width: 80%;
+  padding: 0.2rem 0.5rem;
+}
+button[type="submit"]{
+  margin-top: 0.5rem;
+  width: 6.5rem;
+}
+
+.btnDiv{
+  display: flex;
+}
+.content .edit{
+  color:rgb(30, 255, 0);
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.content .delete{
+  color: #dc3445;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pinkBcg{
+  background-color: pink;
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.greenBcg{
+  background-color: rgb(80, 211, 80);
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+@media (max-width:571px) {
+  form input{
+    width: 100%;
   }
 }
+
+
+
+
